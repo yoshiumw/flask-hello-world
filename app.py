@@ -17,5 +17,5 @@ def explicit():
     ret = []
     for problem in data['problems']:
         for entity in problem['affectedEntities']:
-            ret.append(problem['title'] + '(' + entity['name'] + ')')
-    return ', '.join(ret)
+            ret.append(problem['title'] + ' (' + entity['name'] + ')')
+    return 'Problems: ' + ', '.join(ret)
