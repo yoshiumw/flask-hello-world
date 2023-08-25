@@ -18,4 +18,4 @@ def explicit():
     for problem in data['problems']:
         for entity in problem['affectedEntities']:
             ret.append(problem['title'] + ' (' + entity['name'] + ')')
-    return json.dumps({ 'problems: ' + ', '.join(ret) })
+    return json.dumps({ 'problems':', '.join(ret) })
